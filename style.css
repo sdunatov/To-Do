@@ -1,0 +1,20 @@
+html, body {
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content{
+    width: 300px;
+    vertical-align:  middle;
+    
+}
+
+#buttonAddTask{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: greenyellow;
+}
+
+.toDoes{
+    margin-top:20px;
+}
