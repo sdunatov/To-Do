@@ -1,20 +1,34 @@
 html, body {
     width: 50%;
     margin: 0 auto;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content{
-    width: 300px;
+    padding: 40px;
     vertical-align:  middle;
+    background-color:#ebdbbc;
+    border: 1px black solid;
+    margin-top: 10px;
     
 }
 
-#buttonAddTask{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: greenyellow;
+.content h1{
+    margin-left: 70px;
+    
+}
+.content input{
+    margin-left: 40px;
+
+}
+.btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #03fc3d;
+    border-color: gray;
+    width: 90px;
+    height: 30px;
 }
 
-.toDoes{
+.toDos{
     margin-top:20px;
 }
