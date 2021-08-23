@@ -6,7 +6,7 @@ btnAdd.addEventListener('click', (e) => {
     const todo = document.createElement('p');
     todo.innerText = input.value;
     toDos.appendChild(todo);
-    input.value= "";
+    input.value = "";
     todo.style.margin = '5px';
     
     todo.addEventListener('click', (e) => {
