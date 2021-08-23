@@ -1,17 +1,21 @@
-let addToDoButton = document.getElementById('buttonAddTask');
-let inputTask = document.getElementById('inputAddTask');
-let toDoesContainer = document.getElementById('toDoesContainer');
+const btnAdd = document.querySelector('.btn');
+const input = document.querySelector('.input');
+const toDos = document.querySelector('.toDos');
 
-addToDoButton.addEventListener('click', function(){
-    var paragraph = document.createElement('p');
-    paragraph.innerText = inputTask.value;
-    toDoesContainer.appendChild(paragraph);
-    inputTask.value="";
-    paragraph.addEventListener('click', function(){
-        paragraph.style.textDecoration = "line-through";
+btnAdd.addEventListener('click', (e) => {
+    const todo = document.createElement('p');
+    todo.innerText = input.value;
+    toDos.appendChild(todo);
+    input.value = "";
+    todo.style.margin = '5px';
+    
+    todo.addEventListener('click', (e) => {
+        todo.style.textDecoration = 'line-through';
+        todo.style.color = '#fc6f03';
     })
-    paragraph.addEventListener('dblclick', function(){
-        toDoesContainer.removeChild(paragraph);
-    })
+
+    todo.addEventListener('dblclick', (e) => {
+        toDos.removeChild(todo);
+    })  
 
 })
