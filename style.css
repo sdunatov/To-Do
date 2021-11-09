@@ -5,17 +5,15 @@ html, body {
 }
 
 .content{
-    padding: 40px;
-    vertical-align: middle;
     background-color: #ebdbbc;
     border: 1px black solid;
     margin-top: 10px;
-    
+    display: -moz-box;
 }
 
 .content h1{
     margin-left: 70px;
-    
+
 }
 .content input{
     margin-left: 40px;
@@ -32,3 +30,4 @@ html, body {
 .toDos{
     margin-top: 20px;
 }
+
